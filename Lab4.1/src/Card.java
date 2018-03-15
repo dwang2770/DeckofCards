@@ -1,11 +1,10 @@
 
-public class Cards 
-{
+public class Card {
 	private String rank;
 	private String suit;
 	private int value;
 	
-	public Cards (String rank, String suit, int value)
+	public Card (String rank, String suit, int value)
 	{
 		this.rank = rank;
 		this.suit = suit;
@@ -29,7 +28,7 @@ public class Cards
 		return value;
 	}
 
-	public boolean equals (Cards x, Cards y)
+	public boolean equals (Card x, Card y)
 	{
 		if (x.getValue() == y.getValue())
 		{
