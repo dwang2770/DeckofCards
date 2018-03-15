@@ -7,6 +7,9 @@ public class Deck
 
 	public Deck (String [] rank, String [] suit, int [] value)
 	{
+		this.Dealt = new ArrayList<Card>();
+		this.unDealt=new ArrayList<Card>();
+		
 		for (int i = 0; i < rank.length; i++)
 		{
 			for (int j = 0; j < suit.length; j++)
