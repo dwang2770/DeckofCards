@@ -43,7 +43,7 @@ public class Card {
 	
 	public String toString()
 	{
-		return (this.rank + "of" + this.suit + "with value of: " + this.value);
+		return ("\n Card- " + this.rank + " of " + this.suit + " with value of: " + this.value);
 	}
 	
 }

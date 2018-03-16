@@ -14,9 +14,11 @@ public class Deck
 		{
 			for (int j = 0; j < suit.length; j++)
 			{
-				new Card(rank[i], suit[j], value[i]);
+				unDealt.add( new Card(rank[i], suit[j], value[i]));
 			}
 		}
+		
+		
 	}
 
 	public boolean isEmpty()
@@ -55,13 +57,14 @@ public class Deck
 	
 	public ArrayList<Card> shuffle()
 	{
+		//Takes all the cards in the Dealt list and adds them back to the unDealt list
 		for (int i = 0; i < this.Dealt.size(); i++)
 		{
 			Card holder2 = this.Dealt.get(i);
 			this.Dealt.remove(i);
 			this.unDealt.add(holder2);
 		}
-		
+		//Shuffles the Dealt list
 		for (int k = 51; k >1; k--)
 		{
 			int r = (int)Math.random()*k;
@@ -70,6 +73,11 @@ public class Deck
 			this.unDealt.set(k,holder3);
 		}
 		return unDealt;
+	}
+	
+	public String toString()
+	{
+		return("Dealt: " +this.Dealt + "UnDealt: " + this.unDealt);
 	}
 	
 }

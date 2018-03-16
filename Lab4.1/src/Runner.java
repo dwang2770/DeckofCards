@@ -9,10 +9,7 @@ public class Runner {
 	
 	Deck TehDeck = new Deck (rank, suit, value);
 	
-	for (int i = 0; i < TehDeck.size(); i ++)
-	{
-		 System.out.print((TehDeck.get(i)).toString());
-	}
+	System.out.print(TehDeck);
 	
 	}
 
