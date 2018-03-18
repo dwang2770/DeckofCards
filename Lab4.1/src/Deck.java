@@ -57,22 +57,23 @@ public class Deck
 	
 	public ArrayList<Card> shuffle()
 	{
+		
 		//Takes all the cards in the Dealt list and adds them back to the unDealt list
-		for (int i = 0; i < this.Dealt.size(); i++)
+		while (this.Dealt.size() > 0)
 		{
-			Card holder2 = this.Dealt.get(i);
-			this.Dealt.remove(i);
+			Card holder2 = this.Dealt.get(0);
+			this.Dealt.remove(0);
 			this.unDealt.add(holder2);
 		}
 		//Shuffles the Dealt list
-		for (int k = 51; k >1; k--)
+		for (int k = 51; k > 0; k--)
 		{
-			int r = (int)Math.random()*k;
+			int r = (int)(Math.random()*k);
 			Card holder3 = this.unDealt.get(r);
 			this.unDealt.set(r,this.unDealt.get(k));
 			this.unDealt.set(k,holder3);
 		}
-		return unDealt;
+		return this.unDealt;
 	}
 	
 	public String toString()

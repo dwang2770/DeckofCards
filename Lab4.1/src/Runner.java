@@ -9,6 +9,11 @@ public class Runner {
 	
 	Deck TehDeck = new Deck (rank, suit, value);
 	
+	for (int x = 0; x < 10; x++)
+		{
+		TehDeck.deal();
+		}
+	TehDeck.shuffle();
 	System.out.print(TehDeck);
 	
 	}
