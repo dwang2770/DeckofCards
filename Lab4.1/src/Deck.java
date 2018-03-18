@@ -1,3 +1,8 @@
+/*
+ * Dave Wang 
+ * 3/18/18
+ * Lab 4.1
+ */
 import java.util.ArrayList;
 
 public class Deck 

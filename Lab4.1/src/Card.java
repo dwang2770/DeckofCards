@@ -1,4 +1,8 @@
-
+/*
+ * Dave Wang 
+ * 3/18/18
+ * Lab 4.1
+ */
 public class Card {
 	private String rank;
 	private String suit;
